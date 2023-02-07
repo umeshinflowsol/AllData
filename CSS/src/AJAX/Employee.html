@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee form</title>
+</head>
+<body>
+<table border="1" cellpadding="2" cellspacing="2">
+  <tr>
+    <form name="myform" action="confirm.php" method="get">
+      <td>
+        <label for="first_name">First Name </label>
+      </td>
+      <td>
+        <input  type="text" name="first_name" maxlength="50" size="30">
+      </td>
+  </tr>
+  <tr>
+    <td>
+      <label for="last_name">Last Name </label>
+    </td><td><input  type="text" name="last_name" maxlength="50" size="30">
+  </td></tr>
+  <tr>
+    <td>  <label for="email">Email Address</label>
+    </td><td><input  type="text" name="email" maxlength="80" size="30">
+  </td></tr><br>
+  <input type="submit" value="Submit" onClick="addtext()">
+  </form>
+  </tr>
+</table>
+<script>
+function addtext()
+{
+var fname = document.myform.first_name.value;
+var lname = document.myform.last_name.value;
+var email = document.myform.email.value;
+document.writeln("Thank you! You have just entered the following:");
+document.writeln("<pre>");
+     document.writeln("<td>First Name :</td> " + fname);
+         document.writeln("<td>Last Name :</td> " + lname);
+         document.writeln("<td>Email Address :</td>  " + email);
+    }
+    </script>
+</body>
+</html>

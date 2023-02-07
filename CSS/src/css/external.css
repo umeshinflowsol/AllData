@@ -1,0 +1,32 @@
+#container{
+
+  background-color:red;
+ bottom:10px;
+  left:10px:
+  right:10px;
+  top:10px;
+ transform:scale(width:100px,height:100px);
+ transition:ease in;
+}
+#container:hover{
+
+}
+
+p{
+  animation-duration: 3s;
+  animation-name: sliding;
+  width:300px;
+  text-indent:100px;
+}
+
+@keyframes sliding {
+  from {
+  font-size:100px;
+  color:white;
+  }
+
+  to {
+  font-size:200px;
+  color:blue;
+  }
+}

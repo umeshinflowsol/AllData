@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ajax demo</title>
+</head>
+<body>
+<div id="demo">
+<button onclick="load()">ClickMe</button>
+</div>
+</body>
+<script>
+
+  function load(){
+    var httpRequest=new XMLHttpRequest();
+    httpRequest.onload=function(){
+   document.getElementById("demo").innerHTML=this.responseText;
+    }
+    httpRequest.open("GET","text.txt");
+    httpRequest.send()
+  }
+</script>
+</html>

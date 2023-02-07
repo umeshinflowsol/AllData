@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Validation</title>
+</head>
+<body>
+<form action="html.html " onsubmit="return validate()">
+
+  <input id="username" type="text" placeholder="username">
+  <div id="error"></div>
+  <button type="submit">login</button>
+</form>
+<script>
+  function validate(){
+  let user=document.getElementById("username")
+  let error=document.getElementById("error")
+  let reg=/^[A-Z]+$/g
+  if(user.value==" "){
+  error.innerHTML="username required";
+  return false;
+  }
+  }
+
+</script>
+</body>
+</html>

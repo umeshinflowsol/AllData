@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="properties.css" rel="stylesheet">
+    <script src="Java.js"></script>
+    <script src="validatestore.js"></script>
+
+</head>
+<body>
+<table id="table"  cellpadding="2" cellspacing="2" border="2px">
+    <th>Name</th>
+    <th>Password</th>
+    <th>Age</th>
+    <th>Email</th>
+    <th>City</th>
+    <th>Date</th>
+    <th>Gender</th>
+    <th>Actions</th>
+
+</table>
+<div>
+<input type="button" onclick="add()" value="add">
+<input type="button" onclick="Remove()" value="delete">
+</div>
+<div id="container" style="float:left;">
+    <form form action="#" onsubmit="return validate()" method="get">
+    <input type="text" id="name" name="username" placeholder="enter name"><br>
+    <input type="password" id="password" name="password" placeholder="enter your password"><br>
+    <input type="text" id="age" name="number" placeholder="enter the age"><br>
+    <input type="email" id="mail" name="email" placeholder="enter ur email"><br>
+    <select name="select" id="select">
+        <option>select City:</option>
+        <option>narayana</option>
+        <option>bengaluru</option>
+        <option>Hubli</option>
+    </select><br>
+    <input type="date" name="date"><br>
+    <input type="radio" name="gender">Male
+    <input type="radio" name="gender">Female<br>
+    <input type="submit" id="submit">
+    <input type="reset">
+    </form>
+</div>
+</body>
+</html>

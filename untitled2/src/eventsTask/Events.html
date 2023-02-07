@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>events in javascript</title>
+    <link href="event.css" rel="stylesheet"></link>
+
+</head>
+<body id="body" >
+
+<div class="container">
+    <form  action="#" onsubmit="formSubmit()">
+        <H1>FORM EVENTS</H1>
+        <lable>Enter the text</lable>
+        <input type="text" id="myInput"><br>
+        <lable>Enter the text</lable>
+        <input type="text" id="change"><br>
+        <lable>Enter the text</lable>
+        <input type="text" id="blur"><br>
+        <lable>Enter the text</lable>
+        <input type="text" id="input"/><br/>
+        <input type="submit" value="submit"/>
+        <input type="reset" value="reset" />
+    </form>
+</div>
+
+<div class="container">
+<h1>Keyboard Events</h1>
+
+    <label>On Key Press</label>
+    <input type="text" id="myName"/><br/>
+    <label>On Key Down</label>
+    <input type="email" id="mail" placeholder="enter your email"><br>
+    <label>On Key Up</label>
+    <input type="text" id="pass"  placeholder="enter your password" >
+
+</div>
+
+<div class="container1">
+    <h2>........Mouse Events........</h2>
+    <p> onclick to change div padding and mouse eneter to change button color  </p>
+    <button id="btn">ClickMe</button>
+    <div id="div" style="width:100px;  height:100px; background-color:red;"></div>
+    <p id="para" style="width:200px">In the HTML DOM terminology:
+        Nodes are all nodes (element nodes, text nodes, and comment nodes).
+        Whitespace between elements are also text nodes.
+        Elements are only element nodes.</p>
+    <img src="download.jpg" alt="tiger" id="img">
+    <P>onmousemove to change color of div onmouseup to change height and onmousedown to add border</P>
+    <div id="div2"></div>
+</div>
+
+<script src="addListen.js"></script>
+
+</body>
+</html>

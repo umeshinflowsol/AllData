@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+        img{
+        transition:ease in;
+        animation-name:move;
+        animation-duration: 10s;
+        }
+        @keyframes move{
+        from {float:left;}
+         to {float:right;}
+        }
+        img:hover{
+        width:400px;
+        }
+
+        h1{
+    animation-name: head;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes head {
+    0% {font-size:600%; opacity:1;}
+    25% {font-size:570%; opacity:0;}
+    50% {font-size:600%; opacity:1;}
+    65% {font-size:570%; opacity:0;}
+    80% {font-size:600%; opacity:1; content: "umesh"}
+    90% {font-size:570%; opacity:0;}
+    100% {font-size:600%;opacity:1; content: "TigerUmmi"}
+}
+@keyframes head {
+    25% {float:left;}
+    50% {float:right;}
+    75% {float:bottom;}
+    100% {float:top;}
+}
+
+
+    </style>
+</head>
+<body>
+<h1>TIGERUMMI</h1>
+<img src="download.jpg">
+</body>
+</html>

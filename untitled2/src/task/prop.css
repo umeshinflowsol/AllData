@@ -1,0 +1,64 @@
+#container{
+ float:right;
+ display:block;
+ width:650px
+}
+
+form{
+    display: block;
+    margin-bottom: 20px;
+    padding:40px;
+
+}
+input{
+border:2px solid black;
+width:100px;
+margin-bottom:10px;
+}
+
+h1{
+  text-transform: uppercase;
+  font-size: 15px;
+
+}
+/*tr{
+background-color:white;
+}
+tr:hover{
+background-color:white;
+
+}*/
+#remove{
+background-color: red; /* Green */
+color:white;
+text-shadow:2px 2px red;
+  text-transform: uppercase;
+}
+#edit{
+background-color: green; /* Green */
+color:white;
+text-shadow:2px 2px skyblue;
+  text-transform: uppercase;
+}
+/*td{
+background-color:none;
+
+}
+/
+#table{
+margin:30px;
+padding:2px 2px;
+background-color: #D6EEEE;
+cursor:default;
+}
+/*
+#table:hover{
+background-color:sky blue;
+margin:60px;
+padding:5px 5px;
+text-transform: uppercase;
+
+}*/
+th{
+color:rose;
+}

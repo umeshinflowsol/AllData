@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>This Key Word</title>
+</head>
+<body>
+<script>
+  const video={
+  title:'galipata',
+  songs:['kavithe kavithe','ne sanihake'],
+  showSongs(){
+  this.songs.forEach(function(song){
+  console.log(this.title,song);
+  },this);
+  }
+  };
+  video.showSongs();
+  this.garage='window table'
+  console.log(window.garage);
+  this.garage={
+  table:'garage table'
+  };
+    console.log(this.window.garage);
+
+ let umeshRoom={
+    Name:"umesh",
+    rent:2000
+ };
+     console.log(umeshRoom.Name);
+     <!--inside the method -->
+     const car={
+      name:'hyundai',
+      arage(soap){
+      console.log('servicing ${this.name}')
+      }
+     };
+     car.garage();
+     garage.call(this,'soap')
+     <!--inside the function-->
+
+
+</script>
+</body>
+</html>

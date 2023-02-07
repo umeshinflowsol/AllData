@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button id="mybtn">ClickMe</button>
+<script>
+  var mybatis=document.getElementById("mybtn");
+  mybatis.addEventListener("click",function(e) {
+  console.log(e)
+  if(e.shiftKey){
+  console.log("shiftKey key was pressed while clicking.");
+  }
+  });
+</script>
+
+</body>
+</html>

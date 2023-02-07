@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>
+    #ani{
+    position:relative;
+    top:50px;
+    left:50px;
+     align:center;
+    width:20px;
+    height:20px;
+    border:2px solid black;
+    background:Black;
+    border-radius:50%;
+    animation-name:rotate;
+    animation-iteration-count: infinite;
+      animation-duration: 2s;
+        animation-direction: alternate;
+          animation-timing-function: linear;
+
+    }
+    @keyframes rotate{
+    from{
+    transform:Scale(3);
+    }
+    to{
+        transform:Scale(4);
+    }
+    }
+  </style>
+</head>
+<body>
+<div id="ani"></div>
+
+</body>
+</html>

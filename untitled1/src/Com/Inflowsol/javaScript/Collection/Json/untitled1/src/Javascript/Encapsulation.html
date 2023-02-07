@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Encapsulation</title>
+</head>
+<body>
+<script>
+class Bottle{
+ constructor( name, price){
+      this.name=name;
+      this.price=price;
+
+}
+   getName(){
+   return this.name;
+   }
+   setPrice( name){
+   this.name=name;
+   }
+   getPrice(){
+   return this.price;
+   }
+   setPrice( price){
+   this.price=price;
+   }
+}
+let b=new Bottle();
+b.name="bisleri";
+b.price=1000;
+    document.writeln("Name:"+b.name+"Price:"+ b.price);
+</script>
+</body>
+</html>

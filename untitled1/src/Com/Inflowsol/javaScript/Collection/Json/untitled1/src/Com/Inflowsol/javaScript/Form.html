@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Validation</title>
+  <style>
+    #d{
+    padding:50px 50px;
+    margin :50px 50px;
+    border:2px solid green;
+    color:red;
+    border:fixed;
+    }
+
+  </style>
+</head>
+<body>
+<form id="form" action="message.html" onsubmit="return validate()">
+  <table cellspacing = "2" cellpadding = "2" border = "1" >
+    <tr>
+      <td>
+        <label> User Name: </label>
+        <input type="text" placeholder="enter name" id="name">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label> Password: </label>
+        <input type="text" placeholder="Enter Password" id="password">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label>Gender:  </label>
+        <input type="checkbox" >Male
+        <input type="checkbox">female
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label> Date: </label>
+        <input type="date"  >
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <input type="submit"  value="submit">
+        <input type="reset" value="reset" >
+      </td>
+    </tr>
+  </table>
+</form>
+<script>
+function validate(){
+var name=document.getElementById("name");
+    var password=document.getElementById("password");
+  var form=document.getElementById("form");
+  if(name.value==""||password.value==""){
+  alert("something is left empty");
+  return false;
+  }else if(password.value.length<7){
+      alert(Enter password must be greater than 8 number);
+      return false;
+      }
+}
+
+</script>
+
+</body>
+</html>

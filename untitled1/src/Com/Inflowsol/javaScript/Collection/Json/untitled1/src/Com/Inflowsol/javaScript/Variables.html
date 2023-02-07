@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Variables</title>
+</head>
+<body>
+<button onclick="myfunction()"> Click Here To see
+</button>
+<p id="id"></p>
+<script>
+    let radius=5;
+    let pi=3.14
+    let area;
+    area=pi*radius*radius;
+    console.log(area);
+    function myfunction(){
+    let x=area;
+    document.getElementById("id").innerHTML=x;
+    }
+  </script>
+</body>
+</html>

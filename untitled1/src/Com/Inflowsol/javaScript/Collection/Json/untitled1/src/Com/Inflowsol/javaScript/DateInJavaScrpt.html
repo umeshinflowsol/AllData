@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>datre object</title>
+</head>
+<body>
+<div id="ex"></div>
+<script>
+  function employee(id,name,salary){
+  this.id=id;
+  this.name=name;
+  this.salary=salary;
+  this.changeSalary=otherSalary;
+
+ function changeSalary(changeSalary){
+ this.changeSalary=otherSalary;
+ }
+ }
+ employee e=new employee(1,"umesh",1000);
+document.write(e.id+" "+e.name+" "+e.salary);
+e.changeSalary(10000);
+document.write("<br>"+e.id+" "+e.name+" "+e.salary);
+</script>
+
+</body>
+</html>
